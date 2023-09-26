@@ -1,0 +1,20 @@
+.activities_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.activities_list h3 {
+    background-color: var(--grey-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    border-radius: 5px;
+    font-weight: lighter;
+}
+
+.activities_list h3 span {
+    font-size: 0.8em;
+    cursor: pointer;
+}

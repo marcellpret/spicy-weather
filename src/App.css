@@ -1,0 +1,25 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.good-weather {
+  background: linear-gradient(45deg, var(--accent), var(--secondary-dark));
+}
+
+.bad-weather {
+  background: linear-gradient(45deg, var(--secondary-dark), var(--primary-light));
+}
+
+
+main {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: space-evenly;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 5%;
+}
