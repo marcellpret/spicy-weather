@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 const App = () => {
     const [activities, setActivities] = useLocalStorage("activities", []);
     const [weather, setWeather] = useState(null);
+    const [alertMessage, setAlertMessage] = useState(null);
 
     const isGoodWeather = weather?.isGoodWeather;
 
@@ -38,6 +39,9 @@ const App = () => {
         e.preventDefault();
 
         const form = e.target;
+
+        if (!form.activity.value)
+            return setAlertMessage("Please enter an activity");
 
         const activity = {
             id: uid(),
@@ -68,7 +72,11 @@ const App = () => {
         >
             <Header weather={weather} />
             <main>
-                <Form onAddActivity={addActivity} />
+                <Form
+                    onAddActivity={addActivity}
+                    alertMessage={alertMessage}
+                    setAlarmMessage={setAlertMessage}
+                />
 
                 {weather ? (
                     <ActivitiesList

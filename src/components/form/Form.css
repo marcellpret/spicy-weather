@@ -4,18 +4,30 @@
     max-width: 100%;
     margin-bottom: 2rem;
     border-radius: 5px;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--grey-light);
     height: min-content;
 }
 
-.form-activity input {
-    border-radius: 5px;
-    padding: .6em 0.9em;
-    border: none;
+.activity-input {
     margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.activity-input input {
+    border-radius: 5px;
+    padding: .6rem 0.9rem;
     border: 1px solid var(--grey-dark);
     font-weight: lighter;
+    width: 100%;
+}
+
+.activity-input .alert {
+    color: red;
+    font-size: 0.8em;
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding-left: 0.9rem;
 }
 
 
@@ -24,12 +36,20 @@
 }
 
 .form-activity button {
-
     border-radius: 5px;
     padding: 0.6em 0.9em;
-    border: none;
     background-color: var(--primary);
     color: var(--grey-light);
     cursor: pointer;
     align-self: flex-start;
+    border: 1px solid var(--primary);
+    transition: all 0.2s ease-in-out;
+    margin-top: 1.5rem;
+}
+
+.form-activity button:hover {
+    border: 1px solid var(--primary);
+    background-color: var(--grey-light);
+    color: var(--primary);
+
 }
