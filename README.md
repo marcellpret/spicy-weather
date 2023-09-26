@@ -1,4 +1,4 @@
-# spicy-weather
+# spicy 🌶️ weather
 
 Example app for Project 4 - Weather App
 
