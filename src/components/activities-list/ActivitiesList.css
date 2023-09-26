@@ -17,4 +17,5 @@
 .activities_list h3 span {
     font-size: 0.8em;
     cursor: pointer;
+    margin-left: 0.3rem;
 }
