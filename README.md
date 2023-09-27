@@ -18,8 +18,8 @@ Example app for Project 4 - Weather App
 
 ### Desktop version
 
-<img src='./public/desktop-ss.jpg'>
+<img src='./public/desktop-ss.jpg' style="border-radius:5px">
 
 ### Mobile version
 
-<img src='./public/mobile-ss.jpg' style="width:300px">
+<img src='./public/mobile-ss.jpg' style="width:300px; border-radius:5px">
