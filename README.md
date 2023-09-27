@@ -8,7 +8,7 @@ Example app for Project 4 - Weather App
 2. `cd` into the project folder
 3. Run `npm install`
 4. Run `npm run dev`
-5. Open browser to `localhost:5173``
+5. Open browser to `localhost:5173`
 6. Enjoy!
 
 ## Built With
