@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Form from "./components/form/Form";
 import { uid } from "uid";
-import useLocalStorage from "use-local-storage";
+import useLocalStorageState from "use-local-storage-state";
 
 import "./App.css";
 
@@ -10,7 +10,9 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-    const [activities, setActivities] = useLocalStorage("activities", []);
+    const [activities, setActivities] = useLocalStorageState("activities", {
+        defaultValue: [],
+    });
     const [weather, setWeather] = useState(null);
     const [alertMessage, setAlertMessage] = useState(null);
 
